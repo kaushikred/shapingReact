@@ -29,15 +29,15 @@ my-app/
 
 ## Module Content
 
-Developing the Play Nine (Module 1)
+Developing the Play Nine (Module 2 , Number Selection)
 ```
-Bootstrap, Font Awesome, Lodash and some CSS
+Interacting with numbers
 
-Rendering random stars
+Selecting an answer
 
-Button and Answer components
+Changing an answer
 
-Available numbers, 1-9
+UI behaviour (Bootstrap compare button enable/diable)
 
 ```
 
