@@ -29,21 +29,15 @@ my-app/
 
 ## Module Content
 
-Dynamic Adding Card Content
+Developing the Play Nine (Module 1)
 ```
-Components 
-- <Card />
-- <CardList />
-- <Form />
-- <App />
+Bootstrap, Font Awesome, Lodash and some CSS
 
-state.cards => [<Card />, <Card />]
+Rendering random stars
 
-Refs and controlled components
+Button and Answer components
 
-Passing functions to child component
-
-
+Available numbers, 1-9
 
 ```
 

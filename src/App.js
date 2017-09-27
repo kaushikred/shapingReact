@@ -2,86 +2,98 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
+import _ from 'lodash';
+import { Form, FormControl, Button, Grid, Row,Col,Thumbnail } from 'react-bootstrap';
 
 
-const Card = (props) => {
+const Stars = (props)=>{
+  const numberOfStars = 1 + Math.floor(Math.random()*9) ;
+  // let stars = [];
+  // for (let i=0; i<numberOfStars;i++){
+  //   stars.push(<i key={i} className="fa fa-star"/>)
+  // }
   return (
-    <div style={{ margin : '1em'}}>
-      <img width="75" src={props.avatar_url} />
-      <div style={{display: 'inline-block', marginLeft:10}}>
-        <div style={{fontSize:'1.25em'}}>{props.name}</div>
-        <div>{props.company} </div>
-      </div>
-      
-    </div>
-  ) 
-}
-
-const CardList = (props) =>{
-  return(
     <div >
-        {props.cards.map(card => <Card key={card.id} {...card} />)}
+      {_.range(numberOfStars).map(i =>
+        <i key={i} className="fa fa-star"></i>
+      )}
     </div>
-  );
+  )
+}
+
+const ButtonC = (props)=>{
+  return (
+    <div >
+      <button>=</button>
+    </div>
+  )
+}
+
+const Answer = (props)=>{
+  return (
+    <div >
+      <span>5</span>
+      <span>6</span>
+    </div>
+  )
 }
 
 
+const Numbers = (props) => {
+  return(
+    <Thumbnail >
+      {Numbers.list.map((number,i)=>
+        <span key={i}>{number}</span>
+      )}
+    </Thumbnail>
+  )
+}
 
-class Form extends Component {
-  state = { userName: '' }
-  handleSubmit = (event) =>{
-    event.preventDefault();
-    console.log("Event:",this.state.userName)
-    axios.get('https://api.github.com/users/'+ this.state.userName )
-      .then(resp =>{
-        
-        this.props.onSubmit(resp.data)
-        this.setState({ userName: ''})
-      })
-  }
+Numbers.list =  _.range(1,10);
+
+
+class Game extends Component {
   render(){
-    return(
-      <form onSubmit={this.handleSubmit}>
-        <input 
-        value = {this.state.userName}
-        onChange ={(event)=> this.setState({userName:  event.target.value})  }
-        type="text" placeholder="Github username" required />
-        <button type="submit" >Add Card </button>
-      </form>
+    return (
+      <div >
+       <h3>Play nine</h3>
+       <hr/>
+       <div >
+      
+       <Grid>
+        <Row className="show-grid">
+          <Col xs={12} md={5}> <Stars /></Col>
+          <Col xs={6} md={2}> <ButtonC /></Col>
+          <Col xs={6} md={5}>  <Answer /></Col>
+
+        </Row>
+       </Grid>
+       <br/>
+       <Numbers />
+       </div>
+       
+      </div>
     )
+    
   }
 }
 
 class App extends Component {
-  state = {
-     cards:[
-    ]
-  }
-
-  addNewCard = (cardInfo) =>{
-    console.log(cardInfo)
-    this.setState(prevState => ({
-      cards: prevState.cards.concat(cardInfo)
-    }))
-    
-  }
+  
   render() {
     return (
-      <div>
       <div className="App">
+      
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2> React</h2>
         </div>
-
-      </div>
-      
       <br/>
-      <Form onSubmit={this.addNewCard} />
-      <CardList cards={this.state.cards}/>
+      <div className="container">
+      <Game />
+      </div>
       
       </div>
-     
     );
   }
 }
