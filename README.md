@@ -29,15 +29,17 @@ my-app/
 
 ## Module Content
 
-Developing the Play Nine (Module 2 , Number Selection)
+Developing the Play Nine (Final Module , Number Selection)
 ```
-Interacting with numbers
+Verify and accept answer
 
-Selecting an answer
+5 redraws to balance the level
 
-Changing an answer
+No possible solution
 
-UI behaviour (Bootstrap compare button enable/diable)
+Possible combination
+
+Done Status (win/lose)
 
 ```
 
