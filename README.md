@@ -18,6 +18,11 @@ my-app/
     index.html
     favicon.ico
   src/
+    components/
+      search_bar.js
+      video_detail.js
+      video_list.js
+      video_list_item.js
     App.css
     App.js
     App.test.js
@@ -29,17 +34,13 @@ my-app/
 
 ## Module Content
 
-Developing the Play Nine (Final Module , Number Selection)
+Developing the Youtube Page Alike (Youtube Api)
 ```
-Verify and accept answer
 
-5 redraws to balance the level
+Multi Components Import
 
-No possible solution
+Lodash debounce
 
-Possible combination
-
-Done Status (win/lose)
 
 ```
 

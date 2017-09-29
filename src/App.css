@@ -1,6 +1,19 @@
 .App {
   text-align: center;
+  
 }
+
+
+
+.search {
+  margin: 20px;
+  text-align: center;
+}
+
+.search input{
+  width: 75%;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -51,4 +64,19 @@ span {
   background-color: #aaddaa !important;
   color: #1DC01D !important;
   cursor: not-allowed !important;
+}
+
+.list-group-item{
+  cursor: pointer
+}
+
+.list-group-item:hover{
+  background-color: #eee;
+}
+
+.video-detail .details{
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
