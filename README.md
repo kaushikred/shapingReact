@@ -34,12 +34,10 @@ my-app/
 
 ## Module Content
 
-Developing the Youtube Page Alike (Youtube Api)
+Using redux for detail view
 ```
 
-Multi Components Import
 
-Lodash debounce
 
 
 ```
