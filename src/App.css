@@ -5,13 +5,10 @@
 
 
 
-.search {
-  margin: 20px;
-  text-align: center;
-}
+
 
 .search input{
-  width: 75%;
+  width: 105px;
 }
 
 
@@ -36,47 +33,4 @@
   to { transform: rotate(360deg); }
 }
 
-.fa-star {
-  margin: 0.5em;
-  font-size: 24px;
-}
 
-
-
-span {
-  display: inline-block;
-  margin: 0.5em;
-  text-align: center;
-  background-color: #CCC;
-  width:24px;
-  border-radius: 50%;
-  cursor: pointer;
-
-}
-
-.selected {
-  background-color: #eee !important;
-  color: #ddd !important;
-  cursor: not-allowed !important;
-}
-
-.used {
-  background-color: #aaddaa !important;
-  color: #1DC01D !important;
-  cursor: not-allowed !important;
-}
-
-.list-group-item{
-  cursor: pointer
-}
-
-.list-group-item:hover{
-  background-color: #eee;
-}
-
-.video-detail .details{
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}

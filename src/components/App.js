@@ -2,9 +2,8 @@
 import React, {Component} from 'react';
 import logo from '../logo.svg';
 import '../App.css';
-import BookList from '../containers/book-list';
-import BookDetail from '../containers/book-detail';
-
+import SearchBar from '../containers/search_bar';
+import WeatherList from '../containers/weather_list'
 
 
 
@@ -20,8 +19,12 @@ class  App extends Component {
             <h2> React</h2>
         </div>
         <br/>
-        <BookList />
-        <BookDetail />
+        
+      </div>
+      <div className="container">
+
+      <SearchBar />
+      <WeatherList />
       </div>
       </div>
       ) 

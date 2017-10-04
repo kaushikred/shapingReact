@@ -2,3 +2,36 @@ body {
  
   font-family: sans-serif;
 }
+
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+td:first-of-type, td:first-of-type > div {
+  height: 200px;
+  width: 250px;
+}
+
+form {
+  display: flex ;
+  flex-wrap: wrap;
+}
+
+input {
+  
+  flex-basis: 400px;
+}
+
+button{
+  flex-basis: 100px;
+}
+
