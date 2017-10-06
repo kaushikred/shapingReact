@@ -16,11 +16,9 @@ After creation, your project should look like this:
 
 ## Module Content
 
-Using Redux Middleware Sparkline Axios GoogleMap
 ```
 
-Developing a weather table of Indian cities using
-Open Weather Api
+RSVP App
 
 ```
 
