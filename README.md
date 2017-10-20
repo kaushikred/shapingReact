@@ -18,7 +18,10 @@ After creation, your project should look like this:
 
 ```
 
-RSVP App
+Blog App 
+
+- Redux Form + Validation
+- React Router
 
 ```
 

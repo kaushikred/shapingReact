@@ -1,0 +1,21 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+  padding: 5vw;
+}
+
+.text-help {
+  color:red
+}
+
+input.has-danger {
+  border: 1px solid #f00; 
+}
+
+form a {
+  margin-left: 5px;
+}
+
+.right {
+  float: right;
+}
